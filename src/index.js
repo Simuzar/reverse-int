@@ -1,3 +1,12 @@
 module.exports = function reverse (n) {
-    return Number(n.toString().split('').reverse().join(''))
+    if (n < 0) {
+        n = Math.abs(n)
+        return Number(n.toString().split('').reverse().join(''))
+    }
+    else if (n===0){
+        return 0;
+    }
+    else {
+        return Number(n.toString().split('').reverse().join(''));
+    }   
 }
